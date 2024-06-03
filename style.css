@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",'sans-serif';
+   
+}
+
+body{
+    line-height: 1.6;
+    background-color:#ffffff;
+    
+}
+.container{
+    background-color: #e1ecf7;
+    height: 130px ;
+    margin-bottom: 40px;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+h1{
+    /* color:#fff; */
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 10px 0;
+    /* text-shadow: 0 0 6px rgba(0,0,0,0.5); */
+    
+}
+
+.input-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#search-input{
+    width: 450px;
+    height: 50px;
+    border: none;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 18px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+
+
+}
+
+#search-btn{
+    width:60px;
+    height: 50px; 
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    background-color: #4b9fee;
+    color: #ffffff;
+    font-size: large;
+    cursor: pointer;
+}
+#search-btn:hover{
+    background-color: #0b3a66;
+}
+
+#result{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.university{
+    margin: 20px;
+    width:30%;
+    height: 250px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #d5edfc;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.university:hover{
+ opacity: 0.8;
+}
+
+@media screen and (max-width: 780px){
+    
+    .container{
+       align-items: center;
+       height: 160px;
+       padding: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #search-input{
+        width: 230px;
+        height: 40px;
+        font-size: 16px;
+    }
+    #search-btn{
+        width:60px;
+        height: 40px; 
+    }
+    .university{
+        
+        width:100%;
+        height: 250px;
+    }
+   
+}  
